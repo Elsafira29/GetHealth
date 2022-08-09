@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="shortcut icon" href="./assets/img/hero icon.png" type="image/x-icon">
+    <title>Get Health | Solusi Kesehatan Anda</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/GetHealth.png"
+                        alt="Get Health icon"></a>
+                <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./obat.html">Obat</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./tanya dokter.html">Tanya Dokter</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./artikel.html">Artikel</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-3" type="search"
+                            placeholder="Cari Artikel, Obat, atau Penyakit" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Akhir Navbar -->
+
+    <!-- Form -->
+    <section class="tanyadokter">
+        <div class="text-center">
+            <h2>Tanya Dokter</h2>
+            <hr class="article-line-black">
+            <p>Chat dengan Dokter berpengalaman dan terverifikasi dengan beragam pilihan dokter umum dan dokter
+                spesialis di seluruh Indonesia
+            </p>
+            <br>
+            <!-- Form -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="icon-tanya-dokter">
+                            <img src="./assets/img/Tanya Dokter/tanyadokter.png" alt="Tanya Dokter Icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br><br><br>
+                        <form>
+                            <div class="mb-4">
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <input type="text" class="form-control name" id="name" aria-describedby="name"
+                                            placeholder="Nama Lengkap">
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control email" id="email" aria-describedby="name"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="subyek" aria-describedby="subyek"
+                                    placeholder="Subyek">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="keluhan" rows="3" placeholder="Keluhan"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fcedb5" fill-opacity="1"
+                d="M0,64L30,90.7C60,117,120,171,180,176C240,181,300,139,360,149.3C420,160,480,224,540,229.3C600,235,660,181,720,176C780,171,840,213,900,208C960,203,1020,149,1080,112C1140,75,1200,53,1260,53.3C1320,53,1380,75,1410,85.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- Keluhan -->
+    <section class="keluhan">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    <strong>Sakit kepala dari dahi hingga sekitar leher</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 23 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">04 May 2021, 12:10 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649686/sakit-kepala-dari-dahi-hingga-sekitar-leher">Sakit
+                                            kepala dari dahi hingga sekitar leher</a></strong>
+                                    saat ini saya sering sakit kepala di bagian atas mulai dari dahi sampai ubun ubun,
+                                    dan
+                                    sekarang sakit kepalanya menjalar ke sekitar leher belakang
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/adeline.jaclyn.klikdokter">dr. Adeline Jaclyn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    <strong>Cara Menghilangkan Flek Hitam</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 32 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">05 May 2021, 14:02 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649730/cara-menghilangkan-flek-hitam">Cara
+                                            Menghilangkan Flek Hitam</a></strong>
+                                    Halo dok. Aku mau nanya. Jadi aku ada alergi kulit. Eksim. Aku udah ke spesialis
+                                    kulit.
+                                    Cuma lupa namanya. Derma something. Nah yang jadi masalah ada dots item di beberapa
+                                    area
+                                    kulit. Untuk menghilangkan dots item ini gimana caranya ya dok? Diolesin apa? Terima
+                                    kasih sebelumnya.
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/valda_garcia">dr.Valda Garcia</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    <strong>Tinggi Badan</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Pria, 29 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">05 May 2021, 13:44 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a href="https://www.klikdokter.com/tanya-dokter/read/3649721/tinggi-badan">
+                                            Tinggi Badan</a></strong>
+                                    Assalamualaikum… dokter saya mau bertanya, kenapa tinggi badan saya tidak sama
+                                    dengan
+                                    adik dan orang tua kami? Saya perempuan berusia 19 tahun, tinggi badan saya 146 cm.
+                                    sedangkan adik laki-laki saya yang usia 16 tahun tingginya sudah 165 cm. padahal
+                                    orang
+                                    tua kami dua-duanya berpostur tinggi besar. Yang menjadi pertanyaan saya kenapa
+                                    tinggi
+                                    badan saya tidak sama dengan adik saya? Dan apakah tinggi badan saya masih bisa
+                                    bertambah?
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/valda_garcia">dr.Valda Garcia</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                    <strong>Bagaimana Mengatasi Rasa Cemas Berlebihan?</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 21 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">25 Apr 2021, 22:05 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649540/bagaimana-mengatasi-rasa-cemas-berlebihan">
+                                            Bagaimana Mengatasi Rasa Cemas Berlebihan?</a></strong>
+                                    Halo dok, saya ingin bertanya. Sejak tahun lalu, saya merasa mulai tidak nyaman
+                                    berada
+                                    di sekitar teman-teman saya. Ketika di rumah, saya terkadang suka cemas, nangis,
+                                    gelisah
+                                    yang berlebihan. Juga saat saya marah/kesal, jantung seperti lebih cepat dan panas
+                                    dingin. Pikiran negatif pun selalu ada aja. Apakah ada saran untuk mengatasi masalah
+                                    tersebut? Terima kasih sebelumnya.
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/Dejandra">dr. M. Dejandra Rasnaya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFive">
+                                    <strong>Demam, Badan dan Kepala sakit, Perut Keram</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 23 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">03 May 2021, 20:31 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649540/bagaimana-mengatasi-rasa-cemas-berlebihan">
+                                            Demam, Badan dan Kepala sakit, Perut Keram</a></strong>
+                                    Selamat pagi dokter, saya ingin memberitahu keluhan saya selama 6 hari ini, 3 hari
+                                    awal
+                                    saya demam tinggi, sakit kepala, badan sakit semua, setelah diberi obat ibuprofen
+                                    dan
+                                    amox sekarang udh tak ada demam lg tpi sekarang tinggal sakit2 badan dan suka sakit
+                                    kepala dan perut terasa keram sampai sekarang, mohon solusi nya dokter
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/Dejandra">dr. M. Dejandra Rasnaya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseSix">
+                                    <strong>Nyeri Dada sebelah Kiri, Apakah Penyakit Jantung?</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 18 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">03 May 2021, 20:30 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649665/nyeri-dada-sebelah-kiri-apakah-penyakit-jantung">
+                                            Nyeri Dada sebelah Kiri, Apakah Penyakit Jantung?</a></strong>
+                                    </button>
+                                    dah aga lama tepatnya waktu saya sma skrg sdh kuliah, rasa sakit seperti
+                                    tertusuk,nyeri,sesak,nyeri ulu hati di daerah dada sebelah kiri Rasa tidak enak
+                                    seperti
+                                    ditindih , namun kadang nyeri tsb hilang dan kadang datang kembali, kalau sedang
+                                    sakit
+                                    kadang sakitnya bersamaan dengan sakit punggung dan sy jg orgnya suka stres. kadang
+                                    sakit juga dada sblh kanan cuman yg sering bgt sakit itu sblh kiri.. apakah itu
+                                    pertanda
+                                    penyakit jantung jga kh dok?
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/Dejandra">dr. M. Dejandra Rasnaya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseSeven">
+                                    <strong>Perawatan Luka</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingSeven">
+                                <div class="accordion-body">
+                                    <div class="text-float">
+                                        <div class="floatleft">
+                                            <p class="float">Info penanya: Wanita, 25 tahun</p>
+                                        </div>
+                                        <div class="floatright">
+                                            <p class="float">02 May 2021, 16:34 WIB</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <strong><a
+                                            href="https://www.klikdokter.com/tanya-dokter/read/3649642/perawatan-luka">
+                                            Perawatan Luka</a></strong>
+                                    Dok saya mau nnya, tangan saya kmarin kena pisau dan mendapatkan jahitan karna luka
+                                    cukup dalam. Dan cek jahitan pada hari ketiga dan tidak boleh kena air. Apakah
+                                    perban
+                                    boleh dibuka atau biarkan saja ditutup perban selama 3 hari smpai cek ke dokternya
+                                    dok?
+                                    </p>
+                                </div>
+                                <div class="float">
+                                    Dijawab oleh:
+                                    <a href="https://www.klikdokter.com/me/devia.irine">dr. Devia Irine Putri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2fce1" fill-opacity="1"
+                d="M0,288L48,277.3C96,267,192,245,288,229.3C384,213,480,203,576,202.7C672,203,768,213,864,229.3C960,245,1056,267,1152,266.7C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Keluhan -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-12 col-md-2">
+                    <img src="./assets/img/GetHealth.png" alt="Get Health" class="">
+                </div>
+                <div class="col-md-5 text-left">
+                    <h3>Hubungi Kami</h3>
+                    <p>Alamat: Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman,
+                        Daerah Istimewa Yogyakarta 55281</p>
+                    <p>Email: gethealth.id@gmail.com</p>
+                    <p>Telepon: 027294720074</p>
+                </div>
+                <div class="col-md-5 text-left">
+                    <div class="px-5">
+                        <h3>Partnership</h3>
+                        <p>Website KEMENKES:
+                            <a href="https://www.kemkes.go.id/" target="_blank">KEMENKES</a>
+                        </p>
+                        <p>Website BLC:
+                            <a href="https://covid19.go.id/" target="_blank">Website BLC</a>
+                        </p>
+                        <p>Website KOMINFO:
+                            <a href="https://kominfo.go.id/content/all/virus_corona" target="_blank">KOMINFO</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid last-content">
+            <div class="row">
+                <div class="col-md-8 text-center">
+                    <p class="py-1"></p>©Get Health, 2021. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://instagram.com/gethealth_id_/" target="_blank"><img src="./assets/img/instagram.png"
+                            alt="Instagram" class="my-3 mx-1"></a>
+                    <a href="https://facebook.com/ger.healthid" target="_blank"><img src="./assets/img/facebook.png"
+                            alt="Facebook" class="my-3 mx-1"></a>
+                    <a href="https://twitter.com/GetHealth4" target="_blank"><img src="./assets/img/twitter.png"
+                            alt="Twitter" class="my-3 mx-1"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

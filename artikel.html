@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Health | Solusi Kesehatan Anda</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="shortcut icon" href="./assets/img/hero icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/GetHealth.png"
+                        alt="Get Health icon"></a>
+                <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./obat.html">Obat</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./tanya dokter.html">Tanya Dokter</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./artikel.html">Artikel</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-3" type="search"
+                            placeholder="Cari Artikel, Obat, atau Penyakit" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Akhir Navbar -->
+
+    <!-- Kategori -->
+    <section class="categories" id="topik">
+        <div class="text-center">
+            <h2>Topik Artikel</h2>
+            <hr class="article-line-black">
+            <p>Di bawah ini kamu bisa pilih topik artikel yang pengen kamu cari. Yuk scroll sampai bawah buat topik
+                selengkapnya. Semua yang kamu cari tentang artikel kesehatan pasti ada di sini!</p>
+
+            <section class="features pt-5">
+                <div class="container marketing">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-Covid-19.png" alt="Covid-19 Icon"
+                                class="bd-placeholder-img" width="140" height="140">
+                            <h2>Covid-19</h2>
+                            <p><a id="btn-covid" class="btn btn-success btn-secondary" href="#card-covid">Kepoin Yuuk
+                                    &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-FoodDrink.png" alt="Food & Drink Icon"
+                                class="bd-placeholder-img" width="140" height="140">
+                            <h2>Food & Drink</h2>
+                            <p><a id="btn-makanan" class="btn btn-success btn-secondary" href="#card-makanan">Kepoin
+                                    Yuuk &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-hewan.png" alt="Pet Icon" class="bd-placeholder-img"
+                                width="140" height="140">
+                            <h2>Hewan</h2>
+                            <p><a id="btn-hewan" class="btn btn-success btn-secondary" href="#card-hewan">Kepoin Yuuk
+                                    &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-hamil.png" alt="Pregnant Icon"
+                                class="bd-placeholder-img rounded-circle" width="140" height="140">
+                            <h2>Kehamilan</h2>
+                            <p><a id="btn-hamil" class="btn btn-success btn-secondary" href="#card-hamil">Kepoin Yuuk
+                                    &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-olahraga.png" alt="Sport Icon"
+                                class="bd-placeholder-img" width="140" height="140">
+                            <h2>Olahraga</h2>
+                            <p><a id="btn-olahraga" class="btn btn-success btn-secondary" href="#card-olahraga">Kepoin Yuuk &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-balita.png" alt="Toddlers Icon"
+                                class="bd-placeholder-img" width="140" height="140">
+                            <h2>Balita</h2>
+                            <p><a id="btn-balita" class="btn btn-success btn-secondary" href="#card-balita">Kepoin Yuuk &raquo;</a></p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img src="./assets/img/Artikel/i-herbal.png" alt="Herbal Medicine Icon"
+                                class="bd-placeholder-img" width="140" height="140">
+                            <h2>Obat Herbal</h2>
+                            <p><a id="btn-herbal" class="btn btn-success btn-secondary" href="#card-herbal">Kepoin Yuuk &raquo;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fcedb5" fill-opacity="1"
+                d="M0,64L30,90.7C60,117,120,171,180,176C240,181,300,139,360,149.3C420,160,480,224,540,229.3C600,235,660,181,720,176C780,171,840,213,900,208C960,203,1020,149,1080,112C1140,75,1200,53,1260,53.3C1320,53,1380,75,1410,85.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Kategori -->
+
+    <!-- Card -->
+    <section class="card-article">
+        <div class="article" id="dizzy">
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Kamu Belum Pilih Topik</h2>
+                        <img src="./assets/img/Artikel/i-dizzy.png" alt="Dizzy Icon" class="bd-placeholder-img"
+                            width="140" height="140">
+                        <h2 class="text-center">Yuk Pilih Topik Dulu</h2>
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cavid-19 -->
+        <div id="card-covid" class="article-list">
+            <div class="container text-center">
+                <h1>COVID-19</h1>
+                <hr class="article-line-green">
+                <p>COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2
+                    (SARS-CoV-2).
+                    COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu,
+                    hingga infeksi
+                    paru-paru, seperti pneumonia.</p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid1.jpg" class="card-img-top pt-3" alt="Covid & Mask">
+                        <div class="card-body">
+                            <h5 class="card-title">Serba Serbi Covid-19 yang Mematikan</h5>
+                            <p class="card-text">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute
+                                respiratory syndrome coronavirus 2 (SARS-CoV-2) ...</p>
+                            <a href="https://www.alodokter.com/covid-19" class="btn btn-primary" target="_blank">Baca
+                                Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid2.jpg" class="card-img-top pt-3" alt="Health Stuff">
+                        <div class="card-body">
+                            <h5 class="card-title">Terduga Covid, Apa Saja yang Harus Dilakukan?</h5>
+                            <p class="card-text">aat terduga COVID-19, ada beberapa hal yang harus segera dilakukan. Hal
+                                ini penting untuk mencegah penularan virus ...</p>
+                            <a href="https://www.halodoc.com/artikel/terduga-covid-19-apa-saja-yang-harus-dilakukan"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid3.jpg" class="card-img-top pt-3" alt="Indian Covid">
+                        <div class="card-body">
+                            <h5 class="card-title">Varian Baru COVID-19 B1617 Muncul di India</h5>
+                            <p class="card-text">Kasus COVID-19 di India terus meningkat belakangan ini disebabkan virus
+                                corona varian baru, yaitu B1617. Virus ini ...</p>
+                            <a href="https://www.halodoc.com/artikel/ketahui-varian-baru-covid-19-b1617-yang-muncul-di-india"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid4.jpg" class="card-img-top pt-3" alt="Covid-19 Vaccine">
+                        <div class="card-body">
+                            <h5 class="card-title">Teknologi Pembuatan Vaksin COVID-19</h5>
+                            <p class="card-text">Vaksin COVID-19 merupakan vaksin yang digunakan untuk melawan dan
+                                memutus rantai penularan virus corona. Hal ...</p>
+                            <a href="https://www.halodoc.com/artikel/kenali-teknologi-pembuatan-vaksin-covid-19"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid5.jpg" class="card-img-top pt-3" alt="Muslim woman">
+                        <div class="card-body">
+                            <h5 class="card-title">Amankah Puasa Bagi Pengidap COVID-19?</h5>
+                            <p class="card-text">Menjalani puasa di bulan Ramadan merupakan salah satu ibadah wajib bagi
+                                umat muslim. Namun, ada ...</p>
+                            <a href="https://www.halodoc.com/artikel/apakah-puasa-ramadan-aman-bagi-pengidap-covid-19"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid6.jpg" class="card-img-top pt-3" alt="Brain">
+                        <div class="card-body">
+                            <h5 class="card-title">COVID-19 Sebabkan Kerusakan Otak?</h5>
+                            <p class="card-text">Gejala COVID-19 pada setiap pengidapnya bisa berbeda-beda, beberapa di
+                                antaranya bahkan baru dilaporkan ...</p>
+                            <a href="https://www.halodoc.com/artikel/covid-19-dapat-sebabkan-kerusakan-otak-jangka-panjang"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/covid7.jpg" class="card-img-top pt-3" alt="Sore Throat">
+                        <div class="card-body">
+                            <h5 class="card-title">Beda Sakit Tenggorokan Biasa dengan Covid-19</h5>
+                            <p class="card-text">Tak bisa dimungkiri bahwa selama beberapa bulan terakhir, setiap sakit
+                                tenggorokan, demam, atau sakit kepala ...</p>
+                            <a href="https://www.halodoc.com/artikel/ini-bedanya-sakit-tenggorokan-biasa-dengan-gejala-covid-19"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Covid-19 -->
+
+        <!-- Makanan & Minuman -->
+        <div id="card-makanan" class="article-list">
+            <div class="container text-center">
+                <h1>Food & Drink</h1>
+                <hr class="article-line-green">
+                <p>Makanan dan minuman yang sehat adalah salah satu penunjang agar diri kita terhindar dari berbagai macam penyakit. Oleh karena itu penting bagi kita 
+                    untuk memerhatikan apakah makanan dan minuman yang selama ini kita konsumsi termasuk makanan dan minuman sehat atau malah membahayakan tubuh.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan1.jpg" class="card-img-top pt-3" alt="Vegetables">
+                        <div class="card-body">
+                            <h5 class="card-title">Makanan Plant Based Meredakan Kecemasan</h5>
+                            <p class="card-text">Kesehatan mental sama pentingnya dengan kesehatan fisik. Ternyata,
+                                makanan yang kamu konsumsi pun tidak ...</p>
+                            <a href="https://www.halodoc.com/artikel/makanan-plant-based-bisa-meredakan-kecemasan-ini-faktanya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan2.jpg" class="card-img-top pt-3" alt="Green Lemons">
+                        <div class="card-body">
+                            <h5 class="card-title">Makanan Asam Bisa Picu Sakit Maag, Benarkah?</h5>
+                            <p class="card-text">Pola makan berpengaruh terhadap kondisi maag yang kamu idap. Beberapa
+                                makanan tertentu bisa memicu sakit ...</p>
+                            <a href="https://www.halodoc.com/artikel/makanan-asam-bisa-picu-sakit-maag-benarkah"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan3.jpg" class="card-img-top pt-3" alt="Sweet Drink">
+                        <div class="card-body">
+                            <h5 class="card-title">Minuman Tinggi Gula Sebabkan Asam Urat</h5>
+                            <p class="card-text">Masih asing dengan penyakit? Bagaimana dengan asam urat? Penyakit asam
+                                urat atau arthritis gout (gout) ini sejenis ...</p>
+                            <a href="https://www.halodoc.com/artikel/minuman-tinggi-gula-bisa-sebabkan-penyakit-asam-urat"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan4.jpg" class="card-img-top pt-3" alt="Burnt Food">
+                        <div class="card-body">
+                            <h5 class="card-title">Makanan Gosong Sebabkan Kanker?</h5>
+                            <p class="card-text">Terkadang, kamu secara tidak sengaja terlalu lama meninggalkan makanan
+                                yang dimasak akhirnya terdapat ...</p>
+                            <a href="https://www.halodoc.com/artikel/makanan-gosong-sebabkan-kanker-mitos-atau-fakta"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan5.jpg" class="card-img-top pt-3" alt="Coffee Drink">
+                        <div class="card-body">
+                            <h5 class="card-title">Minuman Berkafein Bisa Sebabkan Gastritis</h5>
+                            <p class="card-text">Gastritis adalah penyakit yang terjadi karena ada peradangan atau
+                                pembengkakan pada lapisan kulit dalam lambung ...</p>
+                            <a href="https://www.halodoc.com/artikel/minuman-yang-mengandung-kafein-bisa-sebabkan-gastritis"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan6.jpg" class="card-img-top pt-3" alt="Boba Tea">
+                        <div class="card-body">
+                            <h5 class="card-title">5 Jenis Minuman Tidak Sehat yang Naikkan BB</h5>
+                            <p class="card-text">Faktanya, seseorang bisa mengalami kenaikan berat badan akibat berbagai
+                                alasan. Salah satunya karena terlalu ...</p>
+                            <a href="https://www.halodoc.com/artikel/5-jenis-minuman-tidak-sehat-yang-bikin-berat-badan-naik"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/makanan7.jpg" class="card-img-top pt-3" alt="Potatoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Makanan Pengganti Nasi yang Menyehatkan</h5>
+                            <p class="card-text">Bagi kebanyakan orang Indonesia, belum makan nasi artinya belum makan.
+                                Padahal, ada beberapa kondisi di mana ...</p>
+                            <a href="https://www.halodoc.com/artikel/makanan-pengganti-nasi-untuk-hidup-yang-lebih-sehat"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Makanan & Minuman -->
+
+        <!-- Hewan -->
+        <div id="card-hewan" class="article-list">
+            <div class="container text-center">
+                <h1>Hewan</h1>
+                <hr class="article-line-green">
+                <p>Apakah kamu termasuk pecinta hewan? Kalau kamu memang pecinta hewan penting banget looh tau informasi-informasi menarik seputar hewan. Bisa jadi hewan 
+                    peliharaan atau hewan ternakmu sedang sakit tapi kamu tidak menyadarinya.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan1.jpg" class="card-img-top pt-3" alt="Cat">
+                        <div class="card-body">
+                            <h5 class="card-title">Yakin Hewan Kesayangan Tidak Divaksin?</h5>
+                            <p class="card-text">Kehadiran hewan peliharaan di rumah membawa kebahagiaan tersendiri.
+                                Tidak jarang hewan peliharaan dianggap sebagai ...</p>
+                            <a href="https://www.halodoc.com/artikel/hewan-kesayangan-tidak-divaksin-waspada-bahayanya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan2.jpg" class="card-img-top pt-3" alt="Orang Utan">
+                        <div class="card-body">
+                            <h5 class="card-title">Mamalia Berpotensi Sebarkan Virus Rabies</h5>
+                            <p class="card-text">Sebaiknya selalu menjaga jarak jika kamu bertemu dengan hewan liar,
+                                seperti kucing maupun anjing. Hewan ...</p>
+                            <a href="https://www.halodoc.com/artikel/hewan-mamalia-berpotensi-sebarkan-virus-rabies"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan3.jpg" class="card-img-top pt-3" alt="Cute Cat">
+                        <div class="card-body">
+                            <h5 class="card-title">Cara Menghilangkan Bau Hewan Peliharaan</h5>
+                            <p class="card-text">Apakah kamu merasa seluruh rumah berbau seperti kotoran hewan
+                                peliharaan? Menghilangkan bau kucing di ...</p>
+                            <a href="https://www.halodoc.com/artikel/cara-menghilangkan-bau-hewan-peliharaan-di-rumah"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan4.jpg" class="card-img-top pt-3" alt="Animal Fleas">
+                        <div class="card-body">
+                            <h5 class="card-title">Ini Bahayanya Kutu pada Hewan Peliharaan</h5>
+                            <p class="card-text">Memiliki hewan peliharaan seperti anjing dan kucing memang dapat
+                                memberi kesenangan tersendiri bagi ...</p>
+                            <a href="https://www.halodoc.com/artikel/ini-bahayanya-kutu-pada-hewan-peliharaan"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan5.jpg" class="card-img-top pt-3" alt="Cow">
+                        <div class="card-body">
+                            <h5 class="card-title">Ciri-Ciri Hewan Kurban yang Terinfeksi Antraks</h5>
+                            <p class="card-text">Memilih hewan kurban menjadi salah satu persiapan menyambut Hari Raya
+                                Idul Adha. Namun, kamu juga ...</p>
+                            <a href="https://www.halodoc.com/artikel/kenali-ciri-ciri-hewan-kurban-yang-terinfeksi-antraks"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan6.jpg" class="card-img-top pt-3" alt="Cockatoo">
+                        <div class="card-body">
+                            <h5 class="card-title">Alasan Kakatua Termasuk Hewan yang Dilindungi</h5>
+                            <p class="card-text">Bagi pencinta burung, kakatua mungkin menjadi salah satu “incaran”
+                                untuk dipelihara. Bagaimana tidak, hewan yang ...</p>
+                            <a href="https://www.halodoc.com/artikel/inilah-alasan-burung-kakatua-termasuk-hewan-yang-dilindungi"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hewan7.jpg" class="card-img-top pt-3" alt="Tortoise">
+                        <div class="card-body">
+                            <h5 class="card-title">Mau Pelihara Kura-Kura? Perhatikan 5 Hal Ini</h5>
+                            <p class="card-text">Kura-kura adalah hewan peliharaan favorit bagi beberapa orang, karena
+                                mereka pendiam, lucu, dan tidak merontokkan ...</p>
+                            <a href="https://www.halodoc.com/artikel/sebelum-memelihara-kura-kura-perhatikan-5-hal-ini"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Hewan -->
+
+        <!-- Kehamilan -->
+        <div id="card-hamil" class="article-list">
+            <div class="container text-center">
+                <h1>Kehamilan</h1>
+                <hr class="article-line-green">
+                <p>Kehamilan adalah salah satu nikmat terbesar dalam hidup perempuan. Tak hanya bagi perempuan, semua pasangan suami istri pasti sangat mencita-citakan hal yang satu ini. Oleh karena itu,
+                    penting banget bagi kamu untuk tau informasi-informasi menarik seputar kehamilan melalui kacamata kesehatan.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil1.jpg" class="card-img-top pt-3" alt="Test Pack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamil tapi Malah Takut, Ini Fakta Tokophobia</h5>
+                            <p class="card-text">Kehamilan dan melahirkan merupakan hal yang paling ditunggu-tunggu
+                                pasangan suami istri. Namun, tidak ...</p>
+                            <a href="https://www.halodoc.com/artikel/hamil-tapi-malah-takut-ini-fakta-tokophobia"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil2.jpg" class="card-img-top pt-3" alt="Pregnant Back Pain">
+                        <div class="card-body">
+                            <h5 class="card-title">Cara Mengatasi Sakit Pinggang saat Hamil Tua</h5>
+                            <p class="card-text">Seorang ibu hamil akan mengalami banyak perubahan dalam tubuhnya saat
+                                memasuki masa kehamilan. Salah ...</p>
+                            <a href="https://www.halodoc.com/artikel/sakit-pinggang-saat-hamil-tua-ini-cara-mengatasinya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil3.jpg" class="card-img-top pt-3" alt="Twin Baby">
+                        <div class="card-body">
+                            <h5 class="card-title">Apa Saja Ciri-Ciri Ibu Hamil Anak Kembar?</h5>
+                            <p class="card-text">Beberapa pasangan berharap untuk mendapatkan kehamilan dengan dua bayi
+                                di dalamnya yang disebut juga dengan ...</p>
+                            <a href="https://www.halodoc.com/artikel/apa-saja-ciri-ciri-ibu-hamil-anak-kembar"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil4.jpg" class="card-img-top pt-3"
+                            alt="Pregnant Woman Sleeping">
+                        <div class="card-body">
+                            <h5 class="card-title">Gangguan Tidur Sering Dialami oleh Ibu Hamil</h5>
+                            <p class="card-text">Kehamilan merupakan salah satu momen yang membahagiakan bagi calon ibu
+                                dan ayah. Meski demikian, ...</p>
+                            <a href="https://www.halodoc.com/artikel/gangguan-tidur-yang-sering-dialami-oleh-ibu-hamil"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil5.jpg" class="card-img-top pt-3"
+                            alt="Pregnant Muslim Woman">
+                        <div class="card-body">
+                            <h5 class="card-title">Puasa Saat Hamil, Boleh atau Tidak?</h5>
+                            <p class="card-text">Setiap Ramadan seluruh umat Islam diwajibkan untuk menjalani ibadah
+                                puasa. Namun, ada beberapa golongan yang ...</p>
+                            <a href="https://www.halodoc.com/artikel/puasa-saat-hamil-boleh-atau-tidak"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil6.jpg" class="card-img-top pt-3"
+                            alt="Pregnant Woman Eating Apple">
+                        <div class="card-body">
+                            <h5 class="card-title">7 Jenis Buah yang Bagus untuk Ibu Hamil</h5>
+                            <p class="card-text">Selama kehamilan, janin dalam kandungan bergantung pada ibu untuk
+                                memberikan nutrisi yang dibutuhkan. Itulah ...</p>
+                            <a href="https://www.halodoc.com/artikel/7-jenis-buah-yang-bagus-untuk-ibu-hamil"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/hamil7.jpg" class="card-img-top pt-3"
+                            alt="Pregnant Woman Drinking Milk">
+                        <div class="card-body">
+                            <h5 class="card-title">Seberapa Penting Minum Susu Ibu Hamil?</h5>
+                            <p class="card-text">Ibu hamil penting untuk mengonsumsi makanan dan minuman yang sehat.
+                                Tujuannya untuk memberikan nutrisi ...</p>
+                            <a href="https://www.halodoc.com/artikel/seberapa-penting-minum-susu-ibu-hamil"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Kehamilan -->
+
+        <!-- Olahraga -->
+        <div id="card-olahraga" class="article-list">
+            <div class="container text-center">
+                <h1>Olahraga</h1>
+                <hr class="article-line-green">
+                <p>Olahraga sangat bermanfaat bagi kesehatan tubuh. Dengan berolahraga metabolisme tubuh menjadi lancar sehingga distribusi
+                dan penyerapan nutrisi dalam tubuh menjadi lebih efektif dan efisien. Oleh karena itulah olahraga sangat digemari banyak orang. Dengan berolahraga rutin,
+                secara tidak langsung tubuh juga akan memiliki kondisi yang lebih prima serta ideal dibandingkan sebelumnya. Pikiran
+                jauh lebih tenang, dan diri menjadi jauh lebih produktif.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga1.jpg" class="card-img-top pt-3" alt="Ruler">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahraga atau Diet untuk Merampingkan Badan?</h5>
+                            <p class="card-text">Menurunkan berat badan mungkin perkara yang lebih mudah daripada merampingkan berat badan. Pasalnya, ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-atau-diet-yang-cepat-merampingkan-badan"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga2.jpg" class="card-img-top pt-3" alt="Excercise With Son">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahraga Menyenangkan Bareng Anak</h5>
+                            <p class="card-text">Bagi kamu yang merupakan seorang pekerja kantoran, dan merupakan seorang ibu tentu waktu kamu sangat terbatas ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-bareng-anak-lebih-menyenangkan-dengan-melakukan-gerakan-ini"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga3.jpg" class="card-img-top pt-3" alt="Woman Lifting The Barbell">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahraga Ringan yang Ampuh Usir Perut Buncit</h5>
+                            <p class="card-text">Hari gini masih susah menghilangkan perut buncit? Berarti kamu mengabaikan olahraga dan tips yang perlu ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-ringan-yang-ampuh-usir-perut-buncit"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga4.jpg" class="card-img-top pt-3"
+                            alt="Frozen Shoulder">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahraga yang Tepat Hadapi Frozen Shoulder</h5>
+                            <p class="card-text">Pernah merasakan kaku pada bagian bahu yang disertai dengan rasa nyeri? Bisa jadi itu gejala frozen shoulder ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-yang-tepat-untuk-mencegah-frozen-shoulder-1"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga5.jpg" class="card-img-top pt-3"
+                            alt="Teen Playing Basketball">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahraga Bisa Tambah Tinggi Anak?</h5>
+                            <p class="card-text">Proses tumbuh kembang anak menjadi salah satu hal yang cukup penting untuk diperhatikan bagi setiap ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-bisa-tambah-tinggi-anak-ini-faktanya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga6.jpg" class="card-img-top pt-3"
+                            alt="Football Boy">
+                        <div class="card-body">
+                            <h5 class="card-title">Lebih Baik Olahraga Pagi atau Malam?</h5>
+                            <p class="card-text">Berolahraga adalah hal yang wajib dilakukan untuk menjaga kesehatan tubuh. Rutin berolahraga juga dapat ...</p>
+                            <a href="https://www.halodoc.com/artikel/olahraga-pagi-atau-malam-mana-yang-lebih-baik"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/olahraga7.jpg" class="card-img-top pt-3"
+                            alt="Muslim Woman Excercise">
+                        <div class="card-body">
+                            <h5 class="card-title">Rekomendasi 6 Olahraga Terbaik saat Puasa</h5>
+                            <p class="card-text">Saat menjalani puasa, tubuh tidak mendapatkan suplai makanan dan minuman selama beberapa jam dan membuat ...</p>
+                            <a href="https://www.halodoc.com/artikel/rekomendasi-6-olahraga-terbaik-saat-puasa"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Olahraga -->
+
+        <!-- Balita -->
+        <div id="card-balita" class="article-list">
+            <div class="container text-center">
+                <h1>Balita</h1>
+                <hr class="article-line-green">
+                <p>Balita merupakan salah satu periode usia manusia setelah bayi dengan rentang usia dimulai dari dua sampai dengan lima
+                tahun, atau biasa digunakan perhitungan bulan yaitu usia 24-60 bulan. Periode usia ini disebut juga sebagai usia
+                prasekolah. Pada masa ini seorang anak sangat butuh perhatian dari orang tuanya. Yuk simak apa aja yang perlu diperhatikan.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita1.jpeg" class="card-img-top pt-3" alt="Amelia Anggraeni">
+                        <div class="card-body">
+                            <h5 class="card-title">Balita Punya 3 Warna Mata, Ini Penjelasannya</h5>
+                            <p class="card-text">Keunikan Amelia Anggraeni, balita berusia 2,5 tahun asal Bandung, sedang ramai dibicarakan. Pasalnya, balita ...</p>
+                            <a href="https://www.halodoc.com/artikel/balita-punya-3-warna-mata-ini-penjelasan-medisnya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita2.jpg" class="card-img-top pt-3" alt="Child Drinking Milk">
+                        <div class="card-body">
+                            <h5 class="card-title">Bahaya Balita yang Banyak Minum Manis</h5>
+                            <p class="card-text">Rasa manis dikenal bisa meningkatkan mood oleh orang yang mengonsumsinya, tidak terkecuali anak-anak ...</p>
+                            <a href="https://www.halodoc.com/artikel/ini-bahaya-balita-yang-terlalu-banyak-minum-manis"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita3.jpg" class="card-img-top pt-3" alt="Mom and Son Reading">
+                        <div class="card-body">
+                            <h5 class="card-title">Balita Bicara Gagap, Harus Bagaimana?</h5>
+                            <p class="card-text">Di usia balita, sangat wajar jika kemampuan bicara belum sempurna dan pengucapan kata demi kata belum jelas ...</p>
+                            <a href="https://www.halodoc.com/artikel/balita-bicara-gagap-orangtua-harus-bagaimana"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita4.jpg" class="card-img-top pt-3"
+                            alt="Baby Weights">
+                        <div class="card-body">
+                            <h5 class="card-title">Balita Terlalu Kurus, Awas Malabsorpsi Kronis</h5>
+                            <p class="card-text">Sudah diberi makanan yang cukup dan bernutrisi, tetapi berat badan balita tak kunjung naik bahkan semakin kurus? ...</p>
+                            <a href="https://www.halodoc.com/artikel/balita-terlalu-kurus-awas-malabsorpsi-kronis"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita5.jpg" class="card-img-top pt-3"
+                            alt="Children's Game">
+                        <div class="card-body">
+                            <h5 class="card-title">3 Game Persahabatan untuk Balita</h5>
+                            <p class="card-text">Sebagai makhluk sosial, setiap orang membutuhkan teman untuk berinteraksi. Untuk mendapatkan teman ...</p>
+                            <a href="https://www.halodoc.com/artikel/3-game-persahabatan-untuk-balita"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita6.jpg" class="card-img-top pt-3"
+                            alt="Baby Touching Head">
+                        <div class="card-body">
+                            <h5 class="card-title">Balita Sering Sentuh Kepala? Waspada!</h5>
+                            <p class="card-text">Mendeteksi adanya gejala suatu penyakit pada orang dewasa bisa dibilang lebih mudah ketimbang pada balita. Sebab, ...</p>
+                            <a href="https://www.halodoc.com/artikel/balita-sering-sentuh-kepala-orangtua-waspada-otitis-media"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/balita7.jpg" class="card-img-top pt-3"
+                            alt="Toddlers Drinking Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolehkah Memberikan Kopi pada Balita?</h5>
+                            <p class="card-text">Bagi sebagian orang dewasa, tidak bisa memulai hari sebelum menikmati kopi, entah itu kopi panas atau es kopi. Mungkin ...</p>
+                            <a href="https://www.halodoc.com/artikel/bolehkah-memberikan-kopi-pada-balita"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Balita -->
+
+        <!-- Obat Herbal -->
+        <div id="card-herbal" class="article-list">
+            <div class="container text-center">
+                <h1>Obat Herbal</h1>
+                <hr class="article-line-green">
+                <p>Herbal adalah tanaman atau tumbuhan yang mempunyai kegunaan atau nilai lebih dalam pengobatan. Dengan kata lain, semua
+                jenis tanaman yang mengandung bahan atau zat aktif yang berguna untuk pengobatan bisa digolongkan sebagai herbal. Herbal
+                kadang-kadang disebut juga sebagai tanaman obat, sehingga dalam perkembangannya dimasukkan sebagai salah satu bentuk
+                pengobatan alternatif.
+                </p>
+                <br><br>
+            </div>
+            <div class="container pb-5">
+                <div class="row justify-content-center ">
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal1.jpg" class="card-img-top pt-3" alt="Nutmeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Apakah Biji Buah Pala Bisa Atasi Insomnia?</h5>
+                            <p class="card-text">Tidak hanya dijadikan bumbu dalam masakan, pala juga dapat menjadi obat herbal yang digunakan untuk mengatasi ...</p>
+                            <a href="https://www.halodoc.com/artikel/biji-buah-pala-bisa-atasi-insomnia-mitos-atau-fakta"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal2.jpg" class="card-img-top pt-3" alt="Clove">
+                        <div class="card-body">
+                            <h5 class="card-title">Cengkeh Meredakan Gejala Campak</h5>
+                            <p class="card-text">Campak termasuk salah satu penyakit yang kerap terjadi pada anak-anak. Gangguan ini dapat menyebabkan ...</p>
+                            <a href="https://www.halodoc.com/artikel/cengkeh-dapat-meredakan-gejala-campak-benarkah"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal3.jpg" class="card-img-top pt-3" alt="Turmeric">
+                        <div class="card-body">
+                            <h5 class="card-title">Sering Dipakai Masak, Apa Manfaat Kunyit?</h5>
+                            <p class="card-text">Kuliner Indonesia dikenal kaya rempah dan bumbu masakan yang membuatnya terasa lebih sedap. Tidak mengherankan ...</p>
+                            <a href="https://www.halodoc.com/artikel/sering-dipakai-masak-apa-manfaat-kunyit-bagi-kesehatan"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal4.jpg" class="card-img-top pt-3"
+                            alt="Lime">
+                        <div class="card-body">
+                            <h5 class="card-title">Kecap dan Jeruk Nipis, Obat Batuk saat Hamil?</h5>
+                            <p class="card-text">Saat hamil, ibu pastinya harus memilih-milih segala sesuatu yang masuk ke dalam mulut. Pasalnya, apa pun yang akan ...</p>
+                            <a href="https://www.halodoc.com/artikel/kecap-dan-jeruk-nipis-obat-batuk-alami-untuk-ibu-hamil"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal5.jpg" class="card-img-top pt-3"
+                            alt="Red Ginger">
+                        <div class="card-body">
+                            <h5 class="card-title">Jahe Merah Tingkatkan Gairah Seksual</h5>
+                            <p class="card-text">Jahe merah adalah salah satu tanaman herbal yang dikenal memiliki banyak manfaat untuk tubuh. Tanaman herbal satu ...</p>
+                            <a href="https://www.halodoc.com/artikel/jahe-merah-bisa-meningkatkan-gairah-seksual-ini-faktanya"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal6.jpg" class="card-img-top pt-3"
+                            alt="Olive Oil">
+                        <div class="card-body">
+                            <h5 class="card-title">Benarkah Zaitun Bisa Mengobati Vertigo?</h5>
+                            <p class="card-text">Pernahkah kamu merasa pusing hingga menyebabkan kamu sulit beraktivitas? Jangan remehkan pusing yang dialami, apalagi ...</p>
+                            <a href="https://www.halodoc.com/artikel/benarkah-meminum-minyak-zaitun-bisa-mengobati-vertigo"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mx-3 my-3 transition" style="width: 18rem;">
+                        <img src="./assets/img/Artikel/herbal7.jpg" class="card-img-top pt-3"
+                            alt="Valerian Root">
+                        <div class="card-body">
+                            <h5 class="card-title">Akar Valerian Bantu Meredakan Nyeri Haid?</h5>
+                            <p class="card-text">Ketika berhadapan dengan “tamu bulanan”, tak sedikit wanita yang mengalami nyeri haid hingga membuat ...</p>
+                            <a href="https://www.halodoc.com/artikel/akar-valerian-bantu-meredakan-nyeri-haid-benarkah"
+                                class="btn btn-primary" target="_blank">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p><a class="btn btn-success btn-secondary justify-content-center" href="#topik">Pilih Topik
+                                Lainnya
+                                &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Obat Herbal -->
+
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2fce1" fill-opacity="1"
+                d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,149.3C672,149,768,171,864,192C960,213,1056,235,1152,250.7C1248,267,1344,277,1392,282.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+    </section>
+    <!-- Akhir Card -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-12 col-md-2">
+                    <img src="./assets/img/GetHealth.png" alt="Get Health" class="">
+                </div>
+                <div class="col-md-5 text-left">
+                    <h3>Hubungi Kami</h3>
+                    <p>Alamat: Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman,
+                        Daerah Istimewa Yogyakarta 55281</p>
+                    <p>Email: gethealth.id@gmail.com</p>
+                    <p>Telepon: 027294720074</p>
+                </div>
+                <div class="col-md-5 text-left">
+                    <div class="px-5">
+                        <h3>Partnership</h3>
+                        <p>Website KEMENKES:
+                            <a href="https://www.kemkes.go.id/" target="_blank">KEMENKES</a>
+                        </p>
+                        <p>Website BLC:
+                            <a href="https://covid19.go.id/" target="_blank">Website BLC</a>
+                        </p>
+                        <p>Website KOMINFO:
+                            <a href="https://kominfo.go.id/content/all/virus_corona" target="_blank">KOMINFO</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid last-content">
+            <div class="row">
+                <div class="col-md-8 text-center">
+                    <p class="py-1"></p>©Get Health, 2021. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://instagram.com/gethealth_id_/" target="_blank"><img src="./assets/img/instagram.png"
+                            alt="Instagram" class="my-3 mx-1"></a>
+                    <a href="https://facebook.com/ger.healthid" target="_blank"><img src="./assets/img/facebook.png"
+                            alt="Facebook" class="my-3 mx-1"></a>
+                    <a href="https://twitter.com/GetHealth4" target="_blank"><img src="./assets/img/twitter.png"
+                            alt="Twitter" class="my-3 mx-1"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#card-covid, #card-makanan, #card-hewan, #card-hamil, #card-olahraga, #card-balita, #card-herbal').hide();
+
+            $('#btn-covid').click(function () {
+                $('#dizzy, #card-makanan, #card-hewan, #card-hamil, #card-olahraga, #card-balita, #card-herbal').hide();
+                $('#card-covid').show();
+            })
+
+            $('#btn-makanan').click(function () {
+                $('#dizzy, #card-covid, #card-hewan, #card-hamil, #card-olahraga, #card-balita, #card-herbal').hide();
+                $('#card-makanan').show();
+            });
+
+            $('#btn-hewan').click(function () {
+                $('#dizzy, #card-covid, #card-makanan, #card-hamil, #card-olahraga, #card-balita, #card-herbal').hide();
+                $('#card-hewan').show();
+            });
+
+            $('#btn-hamil').click(function () {
+                $('#dizzy, #card-covid, #card-makanan, #card-hewan, #card-olahraga, #card-balita, #card-herbal').hide();
+                $('#card-hamil').show();
+            });
+
+            $('#btn-olahraga').click(function () {
+                $('#dizzy, #card-covid, #card-makanan, #card-hewan, #card-hamil, #card-balita, #card-herbal').hide();
+                $('#card-olahraga').show();
+            });
+
+            $('#btn-balita').click(function () {
+                $('#dizzy, #card-covid, #card-makanan, #card-hewan, #card-hamil, #card-hamil, #card-olahraga, #card-herbal').hide();
+                $('#card-balita').show();
+            });
+
+            $('#btn-herbal').click(function () {
+                $('#dizzy, #card-covid, #card-makanan, #card-hewan, #card-hamil, #card-hamil, #card-olahraga, #card-balita').hide();
+                $('#card-herbal').show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
